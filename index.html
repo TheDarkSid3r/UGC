@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">Jackbox Episode Creator</div>
+        <div class="desc">Generate episode IDs for Quiplash 2 and Drawful 2 without having to use the game!</div>
+        <div class="label">Game</div>
+        <select class="game-select">
+            <option value="quiplash2" selected>Quiplash 2</option>
+            <option value="drawful2">Drawful 2</option>
+        </select>
+        <div class="label">Episode Name</div>
+        <input type="text" class="title-input" maxlength="50" />
+        <div class="label less">Episode Author Name</div>
+        <input type="text" class="author-input less" maxlength="12" placeholder="(optional)" />
+        <br>
+        <input type="text" class="prompt-input" maxlength="150" placeholder="enter a prompt" />
+        <button class="publish-button">DONE</button>
+        <button class="prompt-add-button">ADD PROMPT</button>
+        <div class="prompts"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="index.js"></script>
+</body>
+</html>
