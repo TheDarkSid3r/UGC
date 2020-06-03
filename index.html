@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jackbox Episode Creator</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 <body>
@@ -14,6 +14,18 @@
         <select class="game-select">
             <option value="quiplash2" selected>Quiplash 2</option>
             <option value="drawful2">Drawful 2</option>
+        </select>
+        <div class="label">Target Device</div>
+        <div class="sub-label">Episodes can only be used on the "device" they're published on</div>
+        <select class="platform-select">
+            <option value="WIN" selected>PC/Mac</option>
+            <option value="XBONE">Xbox One</option>
+            <option value="PS4">Playstation 4</option>
+            <option value="PS3">Playstation 3</option>
+            <option value="AFTM">Amazon Fire Stick</option>
+            <option value="OUYA">Ouya</option>
+            <option value="IOS">iOS</option>
+            <option value="ANDROID">Android</option>
         </select>
         <div class="label">Episode Name</div>
         <input type="text" class="title-input" maxlength="50" />
